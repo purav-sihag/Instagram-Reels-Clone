@@ -1,0 +1,48 @@
+html {
+	scroll-snap-type: y mandatory;
+		overflow: scroll;
+		overflow-x: hidden;
+		}
+		::-webkit-scrollbar {
+		width: 0px; /* remove scrollbar space */
+		background: transparent; /*optional: just make scrollbar invisible
+		/* } */
+		/* optional: show position indicator in red */
+}
+/* ::-webkit-scrollbar-thumb {
+	background: #FF0000;
+	} */
+
+.app {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: black;
+}
+
+.app__top > h1 {
+	text-align: center;
+	color: white; 
+}
+
+.app__top {
+	margin-bottom: -50px;
+}
+
+
+.app__logo {
+	height: 12vh;
+}
+
+.app__videos {
+	position: relative;
+	height: 65vh;
+	background-color: white;
+	width: 70%;
+	border-radius: 20px;
+	max-width: 450px;
+	max-height: 1200px;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+}
+
